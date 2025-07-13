@@ -1,57 +1,32 @@
-# 📈 Advertisement Sales Prediction
+# 🩺 Life Expectancy Prediction – Healthcare ML Project
 
-This project builds a regression model to **predict product sales** based on **advertising spend** across TV, Radio, and Newspaper platforms. The model helps in understanding which advertisement channels are most effective in influencing sales and provides data-driven support for marketing decisions.
+This project focuses on predicting **life expectancy** using key health, demographic, and economic indicators, inspired by real-world healthcare policy analysis.
 
----
+## 📊 Dataset
+The dataset includes factors such as:
+- Adult mortality
+- Alcohol consumption
+- BMI
+- GDP
+- Schooling
+- Healthcare expenditure
+- and more...
 
-## 🧠 Project Goal
+Source: [Kaggle WHO Life Expectancy Dataset](https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who)
 
-To predict **sales figures** using ad spending data across multiple media channels, and identify how strongly each type of ad spend impacts the overall product sales.  
-This can help **marketing teams** optimize their ad budgets and allocate resources more efficiently.
+## 🎯 Objective
+Build a regression model to predict the **life expectancy** of a country (like the UK) based on relevant health features.
 
----
+## ⚙️ Model Used
+- Linear Regression  
+- Metrics: R² Score, RMSE  
+- Visualization: Actual vs Predicted plot
 
-## 📊 Dataset Overview
+## 📈 Results
+- **R² Score:** Around 0.88 (based on cleaned features)
+- The model shows strong correlation between schooling, health spending, and life expectancy
 
-- **Source:** Advertisement + Sales dataset  
-- **Rows:** 200+ records  
-- **Features:**  
-  - `TV`: TV advertising budget  
-  - `Radio`: Radio advertising budget  
-  - `Newspaper`: Newspaper advertising budget  
-- **Target:**  
-  - `Sales`: Units sold (in thousands)
-
----
-
-## 🧪 Model & Evaluation
-
-- **Model Used:** Linear Regression  
-- **Train-Test Split:** 80% training / 20% testing  
-- **R² Score:** `0.8999`  
-- **RMSE:** `1.77`  
-- **Visualization:** Scatterplot of Actual vs Predicted Sales
-
+## 🧠 Insight
+This lightweight ML model demonstrates how healthcare data can support national planning, policy analysis, and social forecasting.
 
 ---
-
-## 🔍 Key Insights
-
-- The model achieved a strong **R² score of 0.899**, explaining nearly **90% of the variation** in sales.  
-- The **visualization** shows predictions closely follow actual values with no major outliers.
-- This proves that **TV and Radio advertising** have a strong predictive influence on product sales.
-- Even a simple Linear Regression model is effective when applied to **well-prepared, clean data**.
-
----
-
-## 📁 Project Structure
-advertising
-├── advertisement.ipynb # Main notebook
-├── README.md # Project summary
-
-## ✅ Status
-
-✔️ Completed  
-✔️ Clean dataset  
-✔️ Fully trained + evaluated  
-✔️ GitHub-ready  
